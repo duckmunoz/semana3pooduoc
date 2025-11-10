@@ -1,5 +1,9 @@
 package app;
 
+/**
+ * Clase principal del programa.
+ */
+
 import model.Direccion;
 import model.Persona;
 import model.Rut;
@@ -8,6 +12,9 @@ import util.RutInvalidoException;
 public class Main {
     public static void main(String[] args){
 
+        /**
+         * Inicio del programa
+         */
         System.out.println("Iniciando programa...");
         System.out.println("Desglozando información...");
 

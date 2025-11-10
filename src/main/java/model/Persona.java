@@ -1,5 +1,9 @@
 package model;
 
+/**
+ * Representacion de una persona.
+ */
+
 public class Persona {
 
     private String nombre;
@@ -9,6 +13,14 @@ public class Persona {
     private Rut rut;
 
     private Direccion direccion;
+
+    /**
+     * Constructor de la persona.
+     * @param nombre
+     * @param apellido
+     * @param rut
+     * @param direccion
+     */
 
     public Persona(
             String nombre,
@@ -21,6 +33,10 @@ public class Persona {
         this.direccion = direccion;
     }
 
+    /**
+     * Muestra los datos de la persona.
+     */
+
     public void mostrarDatos(){
         System.out.println(this.nombre);
         System.out.println(this.apellido);
@@ -28,7 +44,12 @@ public class Persona {
         System.out.println(this.direccion);
     }
 
-public void asignarRut(Rut rut){
+    /**
+     * Asigna un rut a la persona.
+     * @param rut
+     */
+
+    public void asignarRut(Rut rut){
     this.rut = rut;
 }
     @Override

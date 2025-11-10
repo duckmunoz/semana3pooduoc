@@ -1,5 +1,9 @@
 package model;
 
+/**
+ * Representacion de la direccion de una persona.
+ */
+
 public class Direccion {
 
     private String calle;
@@ -7,6 +11,13 @@ public class Direccion {
     private String comuna;
 
     private String region;
+
+    /**
+     * Constructor de la direccion.
+     * @param calle
+     * @param comuna
+     * @param region
+     */
 
     public Direccion(
             String calle,
@@ -16,6 +27,11 @@ public class Direccion {
             this.comuna = comuna;
             this.region = region;
     }
+
+    /**
+     * Getters y setters de la direccion.
+     */
+
     public String getCalle() {
         return calle;
     }
@@ -41,6 +57,11 @@ public class Direccion {
         System.out.println();
     }
 
+
+    /**
+     * Permite imprimir la direccion en formato String.
+     * @return
+     */
 
     @Override
     public String toString() {
